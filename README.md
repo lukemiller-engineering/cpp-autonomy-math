@@ -20,13 +20,19 @@ This repository contains a collection of self-contained C++ programs demonstrati
 
 
 
-\## 🔧 Contents
+\## Contents
 
 
 
-\- `rotate\_vector\_z.cpp`  
+* `rotate\_vector\_z.cpp`  
 
-&nbsp; Rotate a 3D vector around the Z-axis using a rotation matrix and trigonometric functions.
+&nbsp; 	Rotate a 3D vector around the Z-axis using a rotation matrix and trigonometric functions.
+
+
+
+* 'matrix\_multiply.cpp'
+
+&nbsp;	Multiply two matrices using nested vectors.
 
 
 
@@ -38,15 +44,11 @@ This repository contains a collection of self-contained C++ programs demonstrati
 
 
 
-\## 🛠️ How to Compile
+\##  How to Compile
 
 
 
 You can compile any file with:
-
-
-
-```bash
 
 g++ filename.cpp -o output -std=c++17
 
