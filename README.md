@@ -31,6 +31,9 @@ This repository contains a collection of self-contained C++ programs demonstrati
 
  - Clusters a group of points within a distance. 
 
+* "Count Isolated.cpp"
+ - Counts isolated numbers.
+
 (Additional examples coming soon...)
 
 
