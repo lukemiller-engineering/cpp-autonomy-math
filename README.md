@@ -31,8 +31,11 @@ This repository contains a collection of self-contained C++ programs demonstrati
 
  - Clusters a group of points within a distance. 
 
-* "Count Isolated.cpp"
+* "CountIsolated.cpp"
  - Counts isolated numbers.
+
+* "PID.cpp"
+ - Demonstrates real-time position tracking using a simple PID loop. Outputs time, position, and control command.
 
 (Additional examples coming soon...)
 
