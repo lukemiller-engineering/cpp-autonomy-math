@@ -2,40 +2,58 @@
 
 Applied math for autonomy projects in C++
 
-
-\# C++ Math Snippets
-
-
-\*\*Applied math for autonomy projects in C++\*\*
+A collection of modular C++ demos for applied math, signal processing, and control systems in robotics and autonomy.  
+Built by Luke Miller — PhD in flight control, translating real-time systems into modern C++.
 
 
-This repository contains a collection of self-contained C++ programs demonstrating core mathematical operations used in robotics, control systems, and autonomy applications. Each file is focused, readable, and ready to build on.
-
+## Repository Structure 
+This repo is organized into focused modules, each with a single responsibility. All examples are standalone, readable, and ready to build.
 
 ---
 
+Contents
+/PID_control/
 
-\## Contents
+PID Controller
 
+    Implements a discrete-time PID control loop
 
-* "rotate_vector_z.cpp"
+    Tracks a moving setpoint using velocity integration
 
- - Rotate a 3D vector around the Z-axis using a rotation matrix and trigonometric functions.
+    Outputs time, position, and control effort
 
+/Signal_Processing/
 
-* "matrix_multiply.cpp"
+Moving Average Filter
 
- - Multiply two matrices using nested vectors.
+    Smooths noisy input data using a fixed-size sliding window
 
-* "Cluster.cpp"
+    Ideal for preprocessing sensor or simulation output
 
- - Clusters a group of points within a distance. 
+/Math/
 
-* "CountIsolated.cpp"
- - Counts isolated numbers.
+Rotate Vector Around Z-Axis
 
-* "PID.cpp"
- - Demonstrates real-time position tracking using a simple PID loop. Outputs time, position, and control command.
+    Applies 3D rotation using a standard rotation matrix
+    Matrix Multiply
+
+    Demonstrates nested vector-based matrix multiplication
+
+/Clustering/
+
+Cluster Points by Radius
+
+    Groups 1D points into clusters based on proximity
+
+    Useful for basic perception or map pre-processing
+
+/Utilities/
+
+Count Isolated Numbers
+
+    Counts elements in a list with no adjacent neighbors
+
+    Toy problem useful for iteration logic and boundary handling
 
 (Additional examples coming soon...)
 
@@ -48,4 +66,5 @@ This repository contains a collection of self-contained C++ programs demonstrati
 
 You can compile any file with:
 
-g++ filename.cpp -o output -std=c++17
+g++ path/to/file.cpp -o output -std=c++17
+./output
