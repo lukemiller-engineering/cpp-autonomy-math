@@ -30,6 +30,8 @@ Moving Average Filter
 
     Ideal for preprocessing sensor or simulation output
 
+    Two versions of the moving average filter exist.  One is in O(k) time and one is in O(1) time.
+
 /Math/
 
 Rotate Vector Around Z-Axis
