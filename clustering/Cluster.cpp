@@ -12,6 +12,8 @@ Points:
 
 Written by Luke Miller 
 July 5th 2025
+
+Updated August 6th 2025
 */
 
 #include <iostream>
@@ -72,12 +74,15 @@ int main() {
 					//Case 2 add to cluster
 					clusters[j_cluster].push_back(i);
 				}
-				if(i_in==true && j_in==true){
+
+				if(i_in==true && j_in==true && i_cluster != j_cluster){
+					//Case 3 both points are in different clusters
 					int first = std::min(i_cluster, j_cluster);
 					int second = std::max(i_cluster, j_cluster);
-
+					
+					//Merge second into first
 					clusters[first].insert(clusters[first].end(), clusters[second].begin(), clusters[second].end());
-					clusters.erase(clusters.begin() + second);
+					clusters.erase(clusters.begin() + second); 
 				}
 			}
 		}
